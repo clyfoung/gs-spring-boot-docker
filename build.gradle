@@ -12,6 +12,10 @@ apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
+// added to run application locally
+apply plugin: 'application'
+
+mainClassName = 'hello.Application'
 
 bootJar {
     baseName = 'gs-spring-boot'
